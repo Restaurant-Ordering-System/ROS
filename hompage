@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'PlayFair Display', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background: url('patio.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main Container */
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: #c7ad9d00;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        /* Restaurant Name Styling */
+        .restaurant-name {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 30px;
+            margin-right: 2cqi;
+            color: #f3ecd8; /* Soft yellow/gold */
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            text-transform: uppercase;
+        }
+
+        /* Button Styling */
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px 0;
+            background-color: #f3ecd8;
+            border: 2px solid #f3ecd8;
+            box-shadow: #030303bd;
+            border-radius: 5px;
+            text-decoration: none;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.208);
+            color: #4F4E4C;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: #D6D1C4;
+            transform: scale(1.02);
+        }
+
+        /* about us Button Styling */
+        .exit {
+            color: #4F4E4C;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Restaurant Name -->
+        <div class="restaurant-name">Restaurant</div>
+
+        <!-- Buttons -->
+        <a href="#" class="button">Login as Staff</a>
+        <a href="#" class="button">Login as Customer</a>
+        <a href="#" class="button exit">About Us</a>
+        <a href="#" class="button">Exit</a>
+    </div>
+</body>
+</html>
