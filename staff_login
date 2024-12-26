@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #e1c579;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family:'PlayFair Display', sans-serif;
+            background: url('patio.jpg') no-repeat center center/cover;
+        }
+
+        .login-container {
+            background: #ffffff00;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            font-family:'PlayFair Display', sans-serif;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #f3ecd8;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            text-transform: uppercase;
+            
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #f3ecd8;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            background-color: #f3ecd8;
+            color: #0c0900;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family:'PlayFair Display', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.434);
+
+
+
+        }
+
+        button:hover {
+            background-color: #f3ecd8;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #f3ecd8;
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            text-transform: uppercase;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Staff Login</h1>
+        <form action="/staff-dashboard" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>
